@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "TTNorms-Regular";
+  src: url("~assets/fonts/TT_Norms/TTNorms-Regular.eot");
+  src: url("~assets/fonts/TT_Norms/TTNorms-Regular.eot?#iefix") format("embedded-opentype"),
+    url("~assets/fonts/TT_Norms/TTNorms-Regular.otf") format("opentype"),
+    // url("~assets/fonts/TT_Norms/TTNorms-Regular.svg") format("svg"),
+    url("~assets/fonts/TT_Norms/TTNorms-Regular.ttf") format("truetype"),
+    url("~assets/fonts/TT_Norms/TTNorms-Regular.woff") format("woff"),
+    url("~assets/fonts/TT_Norms/TTNorms-Regular.woff2") format("woff2");
+  font-weight: normal; // 400
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TTNorms-Medium";
+  src: url("~assets/fonts/TT_Norms/TTNorms-Medium.eot");
+  src: url("~assets/fonts/TT_Norms/TTNorms-Medium.eot?#iefix") format("embedded-opentype"),
+    url("~assets/fonts/TT_Norms/TTNorms-Medium.otf") format("opentype"),
+    // url("~assets/fonts/TT_Norms/TTNorms-Medium.svg") format("svg"),
+    url("~assets/fonts/TT_Norms/TTNorms-Medium.ttf") format("truetype"),
+    url("~assets/fonts/TT_Norms/TTNorms-Medium.woff") format("woff"),
+    url("~assets/fonts/TT_Norms/TTNorms-Medium.woff2") format("woff2");
+  font-weight: normal; // 500
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TTNorms-Bold";
+  src: url("~assets/fonts/TT_Norms/TTNorms-Bold.eot");
+  src: url("~assets/fonts/TT_Norms/TTNorms-Bold.eot?#iefix") format("embedded-opentype"),
+    url("~assets/fonts/TT_Norms/TTNorms-Bold.otf") format("opentype"),
+    // url("~assets/fonts/TT_Norms/TTNorms-Bold.svg") format("svg"),
+    url("~assets/fonts/TT_Norms/TTNorms-Bold.ttf") format("truetype"),
+    url("~assets/fonts/TT_Norms/TTNorms-Bold.woff") format("woff"),
+    url("~assets/fonts/TT_Norms/TTNorms-Bold.woff2") format("woff2");
+  font-weight: normal; // 700
+  font-style: normal;
+  font-display: swap;
+}

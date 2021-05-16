@@ -1,0 +1,45 @@
+.section-title-content {
+  position: relative;
+  color: #372b53;
+  padding: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
+  text-align: center;
+
+  &._white {
+    color: $white;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      rgba(196, 196, 196, 0) 0%,
+      #c4c4c4 50%,
+      rgba(196, 196, 196, 0) 100%
+    );
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    right: 30%;
+    height: 1px;
+    box-shadow: 0 0 6px rgba(34, 21, 65, 0.25);
+  }
+}
+
+.section-title {
+  font: $font-weight-bold 34px/1 $font-family-bold;
+}
+
+.section-subtitle {
+  font: $font-weight-regular 18px/1 $font-family-regular;
+  margin: 1rem 0 0 0;
+}

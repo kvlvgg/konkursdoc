@@ -1,0 +1,19 @@
+@import '~/assets/scss/var.scss';
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+.container-overflow {
+  white-space: nowrap;
+  /* overflow-x: auto; */
+  text-overflow: ellipsis;
+}
+
+.popover {
+  color: $secondary-dark;
+}
