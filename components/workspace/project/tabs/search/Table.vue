@@ -241,10 +241,6 @@ export default {
       this.clearTable();
       this.reqCartridges();
     },
-    cartridges() {
-      const colorSet = new Set(this.cartridges.map(x => x.Color));
-      this.$emit('color-set-changed', Array.from(colorSet));
-    },
   },
 
   created() {

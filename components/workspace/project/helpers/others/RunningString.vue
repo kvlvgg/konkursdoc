@@ -46,6 +46,11 @@ export default {
     },
 
     widthChanged() {
+      if (!this.$refs.floatingElement) {
+        this.resizeObserver && this.resizeObserver.unobserve();
+        return;
+      }
+
       const width = this.$refs.floatingElement.offsetWidth;
 
       this.shortStringAnimation = width > 150 && width < 200;

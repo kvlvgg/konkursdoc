@@ -87,6 +87,12 @@
         />
       </b-form-group>
 
+      <p class="font-weight-light" :class="$style['confidential-policy']">
+        Регистрируя аккаунт, Вы принимаете наши условия использования,
+        <a class="btn-link" @click="InDev">политику конфиденциальности</a>
+        и подписываетесь на рассылку новостей от KonkursDoc
+      </p>
+
       <b-form-group>
         <div :class="$style['block-control']">
           <!-- <b-button variant="outline-primary" @click="back">Назад</b-button>
@@ -300,6 +306,13 @@ export default {
     goToLoginForm() {
       this.$emit('go-to-login-form');
     },
+
+    /**
+     * Заглушка
+     */
+    InDev() {
+      alert('Функционал находится в разработке.');
+    },
   },
 };
 </script>
@@ -315,5 +328,22 @@ export default {
 .block-control-main {
   flex: 1 1 auto;
   margin: 0 0 0 1rem;
+}
+
+.confidential-policy {
+  font-size: 12px;
+  text-align: justify;
+
+  @include media-breakpoint-down(xl) {
+    text-align: center;
+  }
+
+  @include media-breakpoint-down(lg) {
+    text-align: justify;
+  }
+
+  :global(.btn-link) {
+    cursor: pointer;
+  }
 }
 </style>

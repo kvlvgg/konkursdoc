@@ -11,6 +11,7 @@ export const state = () => ({
 export const getters = {
   isNewProject: state => state._isNewProject,
   lastAddedPosition: state => state._lastAddedPosition,
+
   project: state => state._project,
   specification: state => state._specification,
   documents: state => state._documents,
@@ -40,9 +41,8 @@ export const mutations = {
   },
 
   ADD_POSITION_TO_SPEC(state, payload) {
-    state._specification.push(
-      Object.assign({ RowNum: state._specification.length + 1 }, payload)
-    );
+    payload.RowNum = state._specification.length + 1;
+    state._specification.push(payload);
   },
 
   REMOVE_POSITION_FROM_SPEC(state, payload) {
@@ -98,7 +98,7 @@ export const actions = {
    * Загружаем проект
    * @return  void
    */
-  async loadProject({ state, commit }, payload) {
+  async loadProject({ state, commit, dispatch }, payload) {
     let project = null;
 
     await this.$axios({
@@ -124,7 +124,7 @@ export const actions = {
 
     commit('LOAD_PROJECT', project);
     if (state._lastClickedPosition)
-      commit('ADD_POSITION_TO_SPEC', state._lastClickedPosition);
+      dispatch('addPositionToSpec', state._lastClickedPosition);
   },
 
   /**
@@ -134,7 +134,7 @@ export const actions = {
   createProject({ commit }, payload) {
     // вызов метода сохранения
     const newProjectId = '9999999';
-    /* eslint-disable */
+
     this.$router.push({
       name: 'project-id',
       params: { id: newProjectId },
@@ -146,25 +146,7 @@ export const actions = {
    * @return void
    */
   addPositionToSpec({ commit }, payload) {
-    const row = {
-      Id: payload.Id,
-      Type: payload.Type,
-      Vendor: payload.Vendor,
-      Partnumber: payload.Partnumber,
-      Supplier: payload.Supplier,
-      Conversion: payload.Conversion,
-      Resourse: payload.Resourse,
-      ResourseMeasure: payload.ResourseMeasure,
-      Color: payload.Color,
-      Percent: payload.Percent,
-      Country: payload.Country,
-      Price: payload.Price,
-      InStock: payload.InStock,
-      PriceUpdateDate: payload.PriceUpdateDate,
-      Amount: payload.Amount.toString(),
-      Currency: payload.Currency,
-      Description: payload.Description,
-    };
+    const row = { ...payload };
     commit('ADD_POSITION_TO_SPEC', row);
     commit('CASH_LAST_ADDED_POSITION', row);
   },
@@ -216,25 +198,6 @@ export const actions = {
    * @return void
    */
   cashLastClickedPosition({ commit }, payload) {
-    const row = {
-      Id: payload.Id,
-      Type: payload.Type,
-      Vendor: payload.Vendor,
-      Partnumber: payload.Partnumber,
-      Supplier: payload.Supplier,
-      Conversion: payload.Conversion,
-      Resourse: payload.Resourse,
-      ResourseMeasure: payload.ResourseMeasure,
-      Color: payload.Color,
-      Percent: payload.Percent,
-      Country: payload.Country,
-      Price: payload.Price,
-      InStock: payload.InStock,
-      PriceUpdateDate: payload.PriceUpdateDate,
-      Amount: payload.Amount.toString(),
-      Currency: payload.Currency,
-      Description: payload.Description,
-    };
-    commit('CASH_LAST_CLICKED_POSITION', row);
+    commit('CASH_LAST_CLICKED_POSITION', { ...payload });
   },
 };

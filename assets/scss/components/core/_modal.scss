@@ -52,6 +52,8 @@
   color: #6a6a6a;
   font-size: 16px;
   margin: 1rem 0;
+  font-family: $font-family-regular !important;
+  font-weight: $font-weight-regular !important;
 
   &.sm {
     font-size: 15px;
@@ -59,10 +61,18 @@
 
   @include media-breakpoint-down(xl) {
     font-size: 14px;
+
+    &.sm {
+      font-size: 14px;
+    }
   }
 
   @include media-breakpoint-down(lg) {
     font-size: 12px;
+
+    &.sm {
+      font-size: 12px;
+    }
   }
 }
 

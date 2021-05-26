@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-modal-wrapper font-weight-light">
+  <div class="custom-modal-wrapper">
     <button
       class="close custom-close-button"
       type="button"
