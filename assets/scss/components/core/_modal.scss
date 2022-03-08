@@ -1,0 +1,104 @@
+.custom-dialog-class {
+  width: max-content;
+  position: relative;
+}
+
+.custom-modal-wrapper {
+  padding: 0 rem(16);
+  text-align: center;
+
+  @include media-breakpoint-down(xl) {
+    width: rem(300);
+  }
+
+  @include media-breakpoint-down(lg) {
+    width: rem(270);
+  }
+}
+
+.custom-close-button {
+  display: flex;
+  position: absolute;
+  top: rem(15);
+  right: rem(15);
+  z-index: 3;
+
+  @include media-breakpoint-down(xl) {
+    top: rem(11);
+    right: rem(11);
+  }
+
+  @include media-breakpoint-down(lg) {
+    top: rem(9);
+    right: rem(9);
+  }
+}
+
+.custom-modal-title {
+  color: #4a427d;
+  @include font(26, 26);
+  margin: rem(8) 0;
+
+  @include media-breakpoint-down(xl) {
+    @include font(22, 22);
+  }
+
+  @include media-breakpoint-down(lg) {
+    @include font(20, 20);
+  }
+}
+
+.custom-form-message,
+.custom-form-subtitle {
+  color: #6a6a6a;
+  @include fontTTNormsRegular();
+  @include font(16, 16);
+  margin: rem(16) 0;
+
+  &.sm {
+    @include font(15, 15);
+  }
+
+  @include media-breakpoint-down(xl) {
+    @include font(14, 14);
+
+    &.sm {
+      @include font(14, 14);
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    @include font(12, 12);
+
+    &.sm {
+      @include font(12, 12);
+    }
+  }
+}
+
+.custom-modal-form {
+  margin: rem(20) 0 0 0;
+}
+
+.custom-modal-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include font(14, 14);
+  @include fontTTNormsRegular();
+}
+
+.custom-modal-button {
+  width: 75%;
+  margin: 0 auto;
+
+  @each $width in (50, 60) {
+    &.w-#{$width} {
+      width: #{$width + '%'};
+    }
+  }
+
+  &.mt-1 {
+    margin-top: rem(16);
+  }
+}

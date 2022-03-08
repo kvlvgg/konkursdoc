@@ -1,0 +1,28 @@
+@mixin icon-menu-expander($fill) {
+  background-image: escape-svg(
+    url('data:image/svg+xml;utf8,<svg width="32" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.749 6.669c0-1.184.96-2.143 2.143-2.143h19.286a2.143 2.143 0 010 4.286H9.892a2.143 2.143 0 01-2.143-2.143zM7.429 15c0-1.184.96-2.143 2.143-2.143h17.142a2.143 2.143 0 110 4.286H9.572A2.143 2.143 0 017.429 15zm.32 9.452c0-1.184.96-2.143 2.143-2.143h19.286a2.143 2.143 0 010 4.286H9.892a2.143 2.143 0 01-2.143-2.143zM1.08 6.669a2.143 2.143 0 114.286 0 2.143 2.143 0 01-4.286 0zm0 8.891a2.143 2.143 0 114.286 0 2.143 2.143 0 01-4.286 0zm0 8.892a2.143 2.143 0 114.286 0 2.143 2.143 0 01-4.286 0z" fill="#{$fill}"/></svg>')
+  );
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.icon-menu-expander {
+  @include icon-menu-expander($secondary);
+
+  &:hover {
+    @include icon-menu-expander(#ff7a00);
+  }
+
+  height: 42px;
+  width: 44px;
+
+  @include media-breakpoint-down(xl) {
+    height: 32px;
+    width: 30px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    height: 26px;
+    width: 24px;
+  }
+}

@@ -1,0 +1,27 @@
+@mixin fontTTNormsRegular() {
+  font-weight: $font-weight-regular;
+  font-family: $font-family-regular;
+}
+
+@mixin fontTTNormsMedium() {
+  font-weight: $font-weight-medium;
+  font-family: $font-family-medium;
+}
+
+@mixin fontTTNormsBold() {
+  font-weight: $font-weight-bold;
+  font-family: $font-family-bold;
+}
+
+@mixin font($font, $line-height) {
+  font-size: rem($font);
+  line-height: rem($line-height);
+}
+
+@mixin hover() {
+  @media screen and (min-width: 992px) {
+    &:hover {
+      @content;
+    }
+  }
+}

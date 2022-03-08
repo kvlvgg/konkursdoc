@@ -1,0 +1,10 @@
+@mixin scroll-margin-left {
+  &::-webkit-scrollbar {
+    width: rem(21);
+  }
+
+  &::-webkit-scrollbar-track:vertical,
+  &::-webkit-scrollbar-thumb:vertical {
+    border-left: solid 10px transparent;
+  }
+}

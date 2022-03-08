@@ -1,0 +1,10 @@
+<svg width="24" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#telegram_(1)_1__clip0)">
+    <path d="M9.417 16.016L9.02 21.6c.568 0 .814-.244 1.11-.537l2.662-2.545 5.518 4.04c1.012.565 1.725.268 1.998-.93L23.93 4.656l.001-.001c.321-1.496-.54-2.081-1.527-1.714l-21.29 8.15c-1.453.565-1.43 1.375-.247 1.742l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218L9.417 16.016z" fill="#039BE5"/>
+  </g>
+  <defs>
+    <clipPath id="telegram_(1)_1__clip0">
+      <path fill="#fff" transform="translate(0 .835)" d="M0 0h24v24H0z"/>
+    </clipPath>
+  </defs>
+</svg>

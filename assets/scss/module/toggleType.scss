@@ -1,0 +1,73 @@
+.toggle-type-block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
+  border: rem(1) solid #d0d0d0;
+  border-radius: rem(15);
+  box-shadow: 0 rem(1) rem(18) rgba(34, 21, 65, 0.12),
+    0 rem(6) rem(10) rgba(34, 21, 65, 0.14),
+    0 rem(3) rem(5) rgba(34, 21, 65, 0.2);
+  opacity: 1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: rem(3);
+    bottom: rem(3);
+    left: rem(3);
+    right: rem(3);
+    background-image: linear-gradient(90deg, $primary 0%, $gr-primary 100%);
+    border-radius: rem(13);
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  &._50 {
+    &:before {
+      width: calc(50% - 3px);
+    }
+  }
+
+  &._33 {
+    &:before {
+      width: calc(33.33% - 2px);
+    }
+  }
+
+  &._oneMonth,
+  &._organizers {
+    &:before {
+      transform: translateX(0);
+    }
+  }
+
+  &._threeMonth,
+  &._participants {
+    &:before {
+      transform: translateX(100%);
+    }
+  }
+
+  &._oneYear {
+    &:before {
+      transform: translateX(200%);
+    }
+  }
+
+  button {
+    flex: 1 1 50%;
+    font-size: rem(14);
+    color: #525252;
+    margin: 0 0.5rem;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &._active {
+      color: $white;
+    }
+  }
+}

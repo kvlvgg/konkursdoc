@@ -1,0 +1,39 @@
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  font-variant-ligatures: no-common-ligatures;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 90%;
+  }
+  @include media-breakpoint-down(lg) {
+    font-size: 80%;
+  }
+}
+
+html,
+body,
+:focus {
+  outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include fontTTNormsBold();
+}
+
+b,
+strong {
+  @include fontTTNormsMedium();
+}
+
+mark {
+  color: $primary;
+  background-color: transparent;
+}

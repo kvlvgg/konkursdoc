@@ -1,0 +1,38 @@
+.splide {
+  width: 100%;
+  padding: 0 70px 3.5em;
+}
+
+.splide__arrow {
+  padding: 20px 14px;
+  background: $white;
+  border-radius: 4px;
+  &--prev {
+    left: 0;
+  }
+  &--next {
+    right: 0;
+  }
+}
+.splide__arrow svg {
+  width: 13px;
+  height: 13px;
+  fill: $primary;
+}
+.splide__arrow:hover svg {
+  fill: $primary;
+}
+
+.splide__pagination__page {
+  width: 11px;
+  height: 11px;
+  background: rgba(255, 255, 255, 0.47);
+  border-radius: 50%;
+
+  &:hover {
+    background: $primary;
+  }
+}
+.splide__pagination__page.is-active {
+  background: $primary;
+}

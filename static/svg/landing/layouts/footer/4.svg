@@ -1,0 +1,39 @@
+<svg width="26" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#instagram_1__clip0)" filter="url(#instagram_1__filter0_d)">
+    <path d="M17.85 1.835h-9.7A7.157 7.157 0 001 8.985v9.7a7.157 7.157 0 007.15 7.15h9.7a7.157 7.157 0 007.15-7.15v-9.7a7.157 7.157 0 00-7.15-7.15zm4.736 16.85a4.735 4.735 0 01-4.736 4.736h-9.7a4.735 4.735 0 01-4.736-4.736v-9.7A4.735 4.735 0 018.15 4.249h9.7a4.735 4.735 0 014.736 4.736v9.7z" fill="url(#instagram_1__paint0_linear)"/>
+    <path d="M13 7.628a6.214 6.214 0 00-6.207 6.207A6.214 6.214 0 0013 20.042a6.214 6.214 0 006.207-6.207A6.214 6.214 0 0013 7.628zm0 10a3.793 3.793 0 110-7.586 3.793 3.793 0 010 7.586z" fill="url(#instagram_1__paint1_linear)"/>
+    <path d="M19.22 9.162a1.487 1.487 0 10-.001-2.975 1.487 1.487 0 000 2.975z" fill="url(#instagram_1__paint2_linear)"/>
+  </g>
+  <defs>
+    <linearGradient id="instagram_1__paint0_linear" x1="13" y1="25.765" x2="13" y2="2.021" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E09B3D"/>
+      <stop offset=".3" stop-color="#C74C4D"/>
+      <stop offset=".6" stop-color="#C21975"/>
+      <stop offset="1" stop-color="#7024C4"/>
+    </linearGradient>
+    <linearGradient id="instagram_1__paint1_linear" x1="13" y1="25.765" x2="13" y2="2.022" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E09B3D"/>
+      <stop offset=".3" stop-color="#C74C4D"/>
+      <stop offset=".6" stop-color="#C21975"/>
+      <stop offset="1" stop-color="#7024C4"/>
+    </linearGradient>
+    <linearGradient id="instagram_1__paint2_linear" x1="19.219" y1="25.765" x2="19.219" y2="2.021" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E09B3D"/>
+      <stop offset=".3" stop-color="#C74C4D"/>
+      <stop offset=".6" stop-color="#C21975"/>
+      <stop offset="1" stop-color="#7024C4"/>
+    </linearGradient>
+    <clipPath id="instagram_1__clip0">
+      <path fill="#fff" transform="translate(1 1.835)" d="M0 0h24v24H0z"/>
+    </clipPath>
+    <filter id="instagram_1__filter0_d" x="0" y=".835" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation=".5"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+</svg>

@@ -1,0 +1,10 @@
+@mixin icon-printer($fill) {
+  background-image: escape-svg(
+    url('data:image/svg+xml;utf8,<svg width="18" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 .5v3.32H4V.5h10zm.234 7.266A.795.795 0 0014.82 8c.235 0 .43-.078.586-.234a.74.74 0 00.274-.586.74.74 0 00-.274-.586.74.74 0 00-.586-.274.74.74 0 00-.586.274.795.795 0 00-.234.586c0 .234.078.43.234.586zM12.32 13.82V9.68H5.68v4.14h6.64zm2.5-9.14c.677 0 1.263.247 1.758.742.495.495.742 1.08.742 1.758v5H14v3.32H4v-3.32H.68v-5c0-.677.247-1.263.742-1.758.495-.495 1.08-.742 1.758-.742h11.64z" fill="#{$fill}"/></svg>')
+  );
+  background-size: 100% 100%;
+
+  display: block;
+  width: 16px;
+  height: 16px;
+}
